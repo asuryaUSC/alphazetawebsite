@@ -41,12 +41,12 @@ const Brotherhood = () => {
                         style={{ width: '100%', height: 'auto', transition: 'transform 0.3s ease-in-out' }}/>
             <motion.div animate={controls} initial="hidden" variants={buttonVariants} className="mt-4">
                 <button className="bg-black text-white px-8 py-3 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform text-lg"
-                        onClick={() => window.location.href = '#active-members'}>
+                        onClick={() => window.location.href = '/members'}>
                     ACTIVE MEMBERS
                     <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                </button>
+                </button> 
             </motion.div>
         </div>
     );
