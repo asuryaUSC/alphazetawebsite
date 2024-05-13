@@ -19,7 +19,7 @@ const ApplyNow = () => {
   ];
 
   return (
-    <div id="apply" className="flex flex-col md:flex-row justify-between items-center min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16"
+    <div id="apply" className="flex flex-col md:flex-row justify items-center min-h-screen px-4 sm:px-6 flex-col-reverse md:px-8 lg:px-12 xl:px-16 py-8 md:py-12 lg:py-14 xl:py-16"
          style={{ background: 'linear-gradient(90deg, #fff7ad, #ffa9f9)' }}>
       <div className="w-full md:w-1/2">
         <CCarousel controls indicators className="max-w-full h-auto">

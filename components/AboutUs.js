@@ -18,7 +18,7 @@ const AboutUs = () => {
         transition={{ duration: 0.8, delay: 1 }}
         className="w-full lg:w-1/2 text-left space-y-4 sm:space-y-5 md:space-y-6"
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4" style={{ fontFamily: fonts.primary }}>About Us</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light font-bold uppercase mb-4" style={{ fontFamily: fonts.primary }}>About Us</h2>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl font-light" style={{ fontFamily: fonts.primary }}>
           Established in 1922, Alpha Zeta propels success in business through resources,
           knowledge, and networking. We welcome all majors, fostering a diverse community

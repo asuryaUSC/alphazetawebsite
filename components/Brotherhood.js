@@ -29,7 +29,7 @@ const Brotherhood = () => {
         <div ref={ref} className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12"
              style={{ background: 'linear-gradient(90deg, #fff7ad, #ffa9f9)' }}>
             <motion.h2 animate={controls} initial="hidden" variants={imageVariants}
-                       className="text-4xl text-black sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-2 sm:mb-3 md:mb-4"
+                       className="text-4xl text-black sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-light uppercase mb-2 sm:mb-3 md:mb-4"
                        style={{ fontFamily: 'Hanken Grotesk, sans-serif' }}>
                 Brotherhood
             </motion.h2>

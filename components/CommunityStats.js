@@ -9,7 +9,7 @@ const Counter = ({ end }) => {
   });
 
   // Determine the duration based on the value of 'end'
-  const duration = end === 1000 ? 2.5 : 3;
+  const duration = end === 1000 ? 3 : 4;
 
   return (
     <div ref={ref} className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold"
@@ -22,7 +22,7 @@ const Counter = ({ end }) => {
 const CommunityStats = () => {
   return (
     <div className="py-2 sm:py-3 md:py-4 lg:py-6 xl:py-8 px-0">
-      <h3 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-6">
+      <h3 className="text-2xl font-light sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl pb-4 font-bold uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-6">
         Join a Community Of
       </h3>
       <div className="flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 flex-wrap justify-center">
