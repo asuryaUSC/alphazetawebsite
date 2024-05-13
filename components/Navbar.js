@@ -3,10 +3,23 @@ import { motion, useAnimation } from 'framer-motion';
 import { fonts } from './FontsAndIcons';
 import Image from 'next/image';
 
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
   const [scrollY, setScrollY] = useState(0);
+  
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const section = document.querySelector(hash);
+      if (section) {
+        setTimeout(() => section.scrollIntoView({ behavior: 'smooth' }), 100);
+      }
+    }
+  }, []);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,13 +34,6 @@ const Navbar = () => {
     controls.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
   }, [controls]);
 
-  const handleScrollToSection = (sectionId) => {
-    const section = document.querySelector(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
@@ -39,12 +45,10 @@ const Navbar = () => {
         <Image src="/az-logo.png" alt="Alpha Zeta Logo" width={150} height={150} />
       </a>
       <div className="md:flex hidden gap-10 text-sm md:text-lg">
-        <button onClick={() => handleScrollToSection('#about')} className="hover:scale-110 transition-transform">ABOUT US</button>
-        <button onClick={() => handleScrollToSection('#careers')} className="hover:scale-110 transition-transform">CAREERS</button>
-        <button onClick={() => window.location.href = '/members'} className="text-black hover:text-gray-500 hover:scale-110 transition-transform no-underline">ACTIVE MEMBERS</button>
-        <button className="bg-black text-white px-4 py-2 rounded hover::scale-110 transition-transform border-black" onClick={() => handleScrollToSection('#apply')}>
-          APPLY NOW
-        </button>
+        <a href="/#about" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">ABOUT US</a>
+        <a href="/#careers" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">CAREERS</a>
+        <a href="/members" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">ACTIVE MEMBERS</a>
+        <a href="/#apply" className="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform border border-black no-underline">APPLY NOW</a>
       </div>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,10 +57,10 @@ const Navbar = () => {
       </button>
       {isOpen && (
         <div className="absolute top-full right-0 bg-gradient-to-r from-white to-gray-200 w-full flex flex-col items-center py-4">
-          <button onClick={() => handleScrollToSection('#apply')} className="text-black hover:text-gray-500 py-2">APPLY</button>
-          <button onClick={() => handleScrollToSection('#about')} className="text-black hover:text-gray-500 py-2">ABOUT US</button>
-          <button onClick={() => handleScrollToSection('#careers')} className="text-black hover:text-gray-500 py-2">CAREERS</button>
-          <button onClick={() => window.location.href = '/members'} className="text-black hover:text-gray-500 py-2 no-underline">ACTIVE MEMBERS</button>
+          <a href="/#apply" className="text-black hover:scale-110 transition-transform py-2">APPLY</a>
+          <a href="/#about" className="text-black hover:scale-110 transition-transform py-2">ABOUT US</a>
+          <a href="/#careers" className="text-black hover:scale-110 transition-transform py-2">CAREERS</a>
+          <a href="/members" className="text-black hover:scale-110 transition-transform py-2 no-underline">ACTIVE MEMBERS</a>
         </div>
       )}
     </motion.nav>
@@ -64,3 +68,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

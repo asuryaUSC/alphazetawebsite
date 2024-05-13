@@ -6,6 +6,7 @@ import Brotherhood from '../components/Brotherhood';
 import ApplyNow from '../components/ApplyNow';
 import Footer from '../components/Footer';
 
+
 export default function Home() {
   return (
     <div className="bg-black">
