@@ -48,7 +48,7 @@ const Navbar = () => {
         <a href="/#about" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">ABOUT US</a>
         <a href="/#careers" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">CAREERS</a>
         <a href="/members" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">ACTIVE MEMBERS</a>
-        <a href="/#apply" className="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform border border-black no-underline">APPLY NOW</a>
+        <a href="/#apply" className="bg-black text-white px-4 py-2 rounded-full hover:scale-110 transition-transform border border-black no-underline">APPLY NOW</a>
       </div>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,7 +60,7 @@ const Navbar = () => {
           <a href="/#about" className="text-black hover:scale-110 transition-transform py-2 no-underline">ABOUT US</a>
           <a href="/#careers" className="text-black hover:scale-110 transition-transform py-2 no-underline">CAREERS</a>
           <a href="/members" className="text-black hover:scale-110 transition-transform py-2 no-underline">ACTIVE MEMBERS</a>
-          <a href="/#apply" className="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform border border-black no-underline">APPLY</a>
+          <a href="/#apply" className="bg-black text-white px-4 py-2 rounded-full hover:scale-110 transition-transform border border-black no-underline">APPLY</a>
         </div>
       )}
     </motion.nav>
