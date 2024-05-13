@@ -10,16 +10,16 @@ const AboutUs = () => {
   });
 
   return (
-    <div id="about" ref={ref} className="flex flex-col lg:flex-row items-center justify-center px-12 py-40 text-black"
+    <div id="about" ref={ref} className="flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-20 sm:py-30 md:py-35 lg:py-40 xl:py-48 text-black"
          style={{ background: 'linear-gradient(90deg, #fff7ad, #ffa9f9)' }}>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={inView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.8, delay: 1 }}
-        className="w-full lg:w-1/2 text-left space-y-6"
+        className="w-full lg:w-1/2 text-left space-y-4 sm:space-y-5 md:space-y-6"
       >
-        <h2 className="text-6xl font-bold uppercase mb-4" style={{ fontFamily: fonts.primary }}>About Us</h2>
-        <p className="text-xl font-light" style={{ fontFamily: fonts.primary }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4" style={{ fontFamily: fonts.primary }}>About Us</h2>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl font-light" style={{ fontFamily: fonts.primary }}>
           Established in 1922, Alpha Zeta propels success in business through resources,
           knowledge, and networking. We welcome all majors, fostering a diverse community
           of motivated individuals. With 50+ active members and a broad alumni network
@@ -34,7 +34,7 @@ const AboutUs = () => {
         initial={{ x: 100, opacity: 0 }}
         animate={inView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0"
+        className="w-full lg:w-1/2 flex justify-center mt-8 sm:mt-10 md:mt-12 lg:mt-0"
       >
         <img
           src="/aboutus.png"

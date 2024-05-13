@@ -41,7 +41,7 @@ const CompanyLogos = () => {
     };
 
     return (
-        <div id="careers" className="px-12 text-black flex flex-col items-center justify-center"
+        <div id="careers" className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 text-black flex flex-col items-center justify-center"
              style={{ background: 'linear-gradient(90deg, #fff7ad, #ffa9f9)' }}>
             <motion.h2 ref={ref}
                        animate={controls}
@@ -50,7 +50,7 @@ const CompanyLogos = () => {
                            hidden: { opacity: 0, y: 20 },
                            visible: { opacity: 1, y: 0, transition: { duration: 0.1 } }
                        }}
-                       className="text-6xl font-bold uppercase mb-4"
+                       className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold uppercase mb-4"
                        style={{ fontFamily: 'Hanken Grotesk, sans-serif' }}>
                 Where We Have Worked
             </motion.h2>
@@ -68,8 +68,8 @@ const CompanyLogos = () => {
                                     transform: `translate(${index % 5 - 2 * 5}px, ${Math.floor(index / 5) * 5 - 2 * 5}px)`
                                 }}>
                         <img src={company.imagePath} alt={company.alt}
-                             className="h-32 w-32 object-fit"
-                             style={{ maxWidth: '100%', height: '100%' }} />
+                             className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36 xl:h-40 xl:w-40 object-cover"
+                             style={{ maxWidth: '100%', height: 'auto' }} />
                     </motion.div>
                 ))}
             </motion.div>

@@ -45,9 +45,9 @@ const Navbar = () => {
         <Image src="/az-logo.png" alt="Alpha Zeta Logo" width={150} height={150} />
       </a>
       <div className="md:flex hidden gap-10 text-sm md:text-lg">
-        <a href="/#about" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">ABOUT US</a>
-        <a href="/#careers" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">CAREERS</a>
-        <a href="/members" className="text-black hover:text-gray-500 py-2 hover:scale-110 transition-transform no-underline">ACTIVE MEMBERS</a>
+        <a href="/#about" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">ABOUT US</a>
+        <a href="/#careers" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">CAREERS</a>
+        <a href="/members" className="text-black hover:text-gray-500 py-2 px-4 hover:scale-110 transition-transform no-underline">ACTIVE MEMBERS</a>
         <a href="/#apply" className="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform border border-black no-underline">APPLY NOW</a>
       </div>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -57,10 +57,10 @@ const Navbar = () => {
       </button>
       {isOpen && (
         <div className="absolute top-full right-0 bg-gradient-to-r from-white to-gray-200 w-full flex flex-col items-center py-4">
-          <a href="/#apply" className="text-black hover:scale-110 transition-transform py-2">APPLY</a>
-          <a href="/#about" className="text-black hover:scale-110 transition-transform py-2">ABOUT US</a>
-          <a href="/#careers" className="text-black hover:scale-110 transition-transform py-2">CAREERS</a>
+          <a href="/#about" className="text-black hover:scale-110 transition-transform py-2 no-underline">ABOUT US</a>
+          <a href="/#careers" className="text-black hover:scale-110 transition-transform py-2 no-underline">CAREERS</a>
           <a href="/members" className="text-black hover:scale-110 transition-transform py-2 no-underline">ACTIVE MEMBERS</a>
+          <a href="/#apply" className="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform border border-black no-underline">APPLY</a>
         </div>
       )}
     </motion.nav>
