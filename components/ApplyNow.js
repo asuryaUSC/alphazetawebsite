@@ -4,22 +4,22 @@ import '@coreui/coreui/dist/css/coreui.min.css'; // Make sure to import CoreUI C
 
 const ApplyNow = () => {
   const images = [
-    { src: '/azimages/1.jpg', alt: 'Slide 1' },
-    { src: '/azimages/2.jpg', alt: 'Slide 2' },
-    { src: '/azimages/3.jpg', alt: 'Slide 3' },
-    { src: '/azimages/4.jpg', alt: 'Slide 4' },
-    { src: '/azimages/5.jpg', alt: 'Slide 5' },
-    { src: '/azimages/6.jpg', alt: 'Slide 6' },
-    { src: '/azimages/7.jpg', alt: 'Slide 7' },
-    { src: '/azimages/8.jpg', alt: 'Slide 8' },
-    { src: '/azimages/9.jpg', alt: 'Slide 9' },
-    { src: '/azimages/10.jpg', alt: 'Slide 10' },
-    { src: '/azimages/11.jpg', alt: 'Slide 11' }
+    { src: '/AZImages/1.jpg', alt: 'Slide 1' },
+    { src: '/AZImages/2.jpg', alt: 'Slide 2' },
+    { src: '/AZImages/3.jpg', alt: 'Slide 3' },
+    { src: '/AZImages/4.jpg', alt: 'Slide 4' },
+    { src: '/AZImages/5.jpg', alt: 'Slide 5' },
+    { src: '/AZImages/6.jpg', alt: 'Slide 6' },
+    { src: '/AZImages/7.jpg', alt: 'Slide 7' },
+    { src: '/AZImages/8.jpg', alt: 'Slide 8' },
+    { src: '/AZImages/9.jpg', alt: 'Slide 9' },
+    { src: '/AZImages/10.jpg', alt: 'Slide 10' },
+    { src: '/AZImages/11.jpg', alt: 'Slide 11' }
     // Add more images as needed
   ];
 
   return (
-    <div id="apply" className="flex flex-row justify-between items-center min-h-screen px-12 py-8 pb-0"
+    <div id="apply" className="flex flex-row justify-between items-center min-h-screen px-12 py-8"
          style={{ background: 'linear-gradient(90deg, #fff7ad, #ffa9f9)' }}>
       <div className="w-1/2">
         <CCarousel controls indicators>
