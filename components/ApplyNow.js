@@ -4,17 +4,17 @@ import '@coreui/coreui/dist/css/coreui.min.css'; // Make sure to import CoreUI C
 
 const ApplyNow = () => {
   const images = [
-    { src: '/AZImages/1.jpg', alt: 'Slide 1' },
-    { src: '/AZImages/2.jpg', alt: 'Slide 2' },
-    { src: '/AZImages/3.jpg', alt: 'Slide 3' },
-    { src: '/AZImages/4.jpg', alt: 'Slide 4' },
-    { src: '/AZImages/5.jpg', alt: 'Slide 5' },
-    { src: '/AZImages/6.jpg', alt: 'Slide 6' },
-    { src: '/AZImages/7.jpg', alt: 'Slide 7' },
-    { src: '/AZImages/8.jpg', alt: 'Slide 8' },
-    { src: '/AZImages/9.jpg', alt: 'Slide 9' },
-    { src: '/AZImages/10.jpg', alt: 'Slide 10' },
-    { src: '/AZImages/11.jpg', alt: 'Slide 11' }
+    { src: 'AZImages/1.jpg', alt: 'Slide 1' },
+    { src: 'AZImages/2.jpg', alt: 'Slide 2' },
+    { src: 'AZImages/3.jpg', alt: 'Slide 3' },
+    { src: 'AZImages/4.jpg', alt: 'Slide 4' },
+    { src: 'AZImages/5.jpg', alt: 'Slide 5' },
+    { src: 'AZImages/6.jpg', alt: 'Slide 6' },
+    { src: 'AZImages/7.jpg', alt: 'Slide 7' },
+    { src: 'AZImages/8.jpg', alt: 'Slide 8' },
+    { src: 'AZImages/9.jpg', alt: 'Slide 9' },
+    { src: 'AZImages/10.jpg', alt: 'Slide 10' },
+    { src: 'AZImages/11.jpg', alt: 'Slide 11' }
     // Add more images as needed
   ];
 
